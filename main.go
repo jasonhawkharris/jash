@@ -11,13 +11,13 @@ func main() {
 
     switch cmd {
     case "spent":
-        fmt.Printf("Added new purchase of %s to %s category\n", args[2], args[3])
+        spent(args)
     case "made":
-        fmt.Printf("Added new income (%s) from %s\n", args[2], args[3])
+        made(args)
     case "create":
-        fmt.Printf("Added new category (%s)\n", args[2])
+        create(args)
     case "account":
-        fmt.Println("Listing your purchases")
+        account(args)
     default:
         fmt.Println("Unknown command")
     }
